@@ -1,0 +1,85 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.nubeero.brokerms</groupId>
+  <artifactId>insurance-broker-service</artifactId>
+<!--  <packaging>pom</packaging>-->
+
+  <version>1.0-snapshot</version>
+  <packaging>pom</packaging>
+  <name>insurance-broker-service</name>
+
+  <url>http://maven.apache.org</url>
+  <modules>
+    <module>broker-svc</module>
+    <module>fraud-svc</module>
+    <module>eureka-server</module>
+    <module>client</module>
+    <module>notification-service</module>
+      <module>apigw-svc</module>
+      <module>amqp</module>
+  </modules>
+  <properties>
+      <spring-boot-maven-version>3.3.3</spring-boot-maven-version>
+    <spring-boot-version>3.3.3</spring-boot-version>
+    <spring-cloud-version>2023.0.3</spring-cloud-version>
+    </properties>
+
+  <dependencyManagement>
+    <dependencies>
+
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-dependencies</artifactId>
+        <version>${spring-boot-version}</version>
+        <scope>import</scope>
+        <type>pom</type>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-dependencies</artifactId>
+        <version>${spring-cloud-version}</version>
+        <scope>import</scope>
+        <type>pom</type>
+      </dependency>
+
+    </dependencies>
+  </dependencyManagement>
+
+<dependencies>
+  <dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-test</artifactId>
+    <scope>test</scope>
+  </dependency>
+  <dependency>
+  <artifactId>lombok</artifactId>
+    <groupId>org.projectlombok</groupId>
+  </dependency>
+  <dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-openfeign</artifactId>
+  </dependency>
+</dependencies>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-maven-plugin</artifactId>
+          <version>${spring-boot-maven-version}</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.0</version>
+      </plugin>
+    </plugins>
+
+  </build>
+
+</project>

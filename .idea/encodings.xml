@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/amqp/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/amqp/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apigw-svc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apigw-svc/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/broker-svc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/broker-svc/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/brokerms/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/brokerms/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/client/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fraud-svc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fraud-svc/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/notification-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/notification-service/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

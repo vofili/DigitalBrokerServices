@@ -1,0 +1,27 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: Broker-Service
+  cloud:
+    compatibility-verifier:
+      enabled: false
+  datasource:
+    url: jdbc:postgresql://localhost:5431/nubeero-broker
+    username: webuser
+    password: Passw0rd
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        dialect:org.hibernate.dialect.PostgreSQLDialect
+eureka:
+  client:
+    enabled:true
+    fetch-registry:true
+    register-with-server:true
+  service-url:
+    defaultZone: http://localhost:8761/eureka/
