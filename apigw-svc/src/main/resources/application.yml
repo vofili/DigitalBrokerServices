@@ -1,0 +1,18 @@
+eureka:
+    client:
+        fetch-registry: true
+        register-with-eureka: true
+        service-url:
+            defaultZone: http://localhost:8761/eureka
+server:
+    port: 8089
+spring:
+    application:
+        name: apigateway
+    cloud:
+        gateway:
+            routes:
+                - id: BROKER-SERVICE
+                  uri: lb://BROKER-SERVICE
+                  predicates:
+                    - Path=/api/v1/brokers/**
